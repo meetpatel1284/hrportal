@@ -1,0 +1,378 @@
+{% extends "../base.html" %}
+ {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Employees</p>
+                    <h5 class="font-weight-bolder">
+                      145
+                    </h5>
+                    
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+                      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                      <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Celebrations</p>
+                    <h5 class="font-weight-bolder">
+                      30
+                    </h5>
+                    
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cake-fill" viewBox="0 0 16 16">
+                      <path d="m7.399.804.595-.792.598.79A.747.747 0 0 1 8.5 1.806V4H11a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-4a2 2 0 0 1 2-2h1V6a2 2 0 0 1 2-2h2.5V1.813a.747.747 0 0 1-.101-1.01ZM12 6.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414v1c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56zm2.646 5.732a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793v1.34c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0 1.915 1.915 0 0 0 2.354.28v-1.34z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Leaves</p>
+                    <h5 class="font-weight-bolder">
+                      20
+                    </h5>
+                    
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+                      <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Graphs</p>
+                    <h5 class="font-weight-bolder">
+                      3
+                    </h5>
+                    
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                      <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="card z-index-2 h-100">
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <h6 class="text-capitalize">Employees</h6>
+              <p class="text-sm mb-0">
+                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                <span class="font-weight-bold">4% more</span> in 2021
+              </p>
+            </div>
+            <div class="card-body p-3">
+              <div class="chart">
+                <div class="table-responsive p-0">
+                  <table class="table align-items-center mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">userid</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">dateofbirth</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">dateofjoining</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">department</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">address</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">emergencycontactno</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">lastappraisaldate</th>
+                        <th class="text-secondary opacity-7">ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for userdetail in userdetails %}
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1"> 
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">{{userdetail.userid}}</h6>
+                               <p class="text-xs text-secondary mb-0">john@creative-tim.com</p> 
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">{{userdetail.dateofbirth}}</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <span class="badge badge-sm bg-gradient-success">{{userdetail.dateofjoining}}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">{{userdetail.department}}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">{{userdetail.address}}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">{{userdetail.emergencycontactno}}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">{{userdetail.lastappraisaldate}}</span>
+                        </td>
+                        <td class="align-middle">
+                          <a href="{% url 'update_userdetail' userdetail.id %}" class="btn btn-warning">
+                            UPDATE
+                          </a>
+                          <a href="{% url 'detail_userdetail' userdetail.id %}" class="btn btn-success">
+                              DETAIL
+                            </a>
+                            <a href="{% url 'delete_userdetail' userdetail.id %}" class="btn btn-danger">
+                              DELETE
+                            </a>
+                        </td>
+                      </tr>    
+                      {% endfor %}       
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row px-md-3" style="margin-top: 15px;">
+      
+      <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Pending</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-danger">{{startedTask}}</p> {% endcomment %}
+
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          {% for i in leaves %}
+                          <tr>
+                            {% if i.status == 'Pending' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                          <td class="align-middle" >
+
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-danger" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;">
+                                            </form>  
+                                           
+                          
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                       <button class="card-button btn btn-info" style="align-self: center;background-color: #007bff;border: none;border-radius: 4px;color: #fff;padding: 8px 16px;cursor: pointer;margin:20px;padding:10px">+ Create Issue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Approved</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-info">{{processingTask}}</p> {% endcomment %}
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for i in leaves %}
+                          <tr>
+                            {% if i.status == 'Approved' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                          <td class="align-middle">
+                                          
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-primary" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;"> 
+                                              <!-- margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px; -->
+
+                                            </form> 
+                                        
+                          
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Rejected</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-success">{{complteTask}}</p> {% endcomment %}
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for i in leaves %}
+                          <tr>
+                            
+                            {% if i.status == 'Rejected' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                           <td class="align-middle">
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-success" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;">
+                                            </form>
+                           
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+                        
+
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "../base.html" %}
+{% load static %}
+{% load crispy_forms_tags %} 
+{% block content %}
+<html>
+  <head>
+    <title>Document</title>
+    </head>
+  <body>
+     
+<div class="card">
+  <h4>User ID :- {{userdetails.userid}}</h4>
+  <h4>Date Of Birth :- {{userdetails.dateofbirth}}</h4>
+  <h4>Date Of Joining :- {{userdetails.dateofjoining}}</h4>
+  <h4>Department :- {{userdetails.department}}</h4>
+  <h4>Address :- {{userdetails.address}}</h4>
+  <h4>EmergencyContactNo :- {{userdetails.emergencycontactno}}</h4>
+  <h4>LastAppraisalDate :- {{userdetails.lastappraisaldate}}</h4>
+</div>
+
+</body>
+
+{% endblock content %}

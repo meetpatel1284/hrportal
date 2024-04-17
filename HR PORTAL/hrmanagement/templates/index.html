@@ -1,0 +1,318 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <style>
+        /* Resetting default browser styles */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        address {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: aliceblue;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: maroon;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Contact section specific styles */
+        #contact {
+            background-color: #f9f9f9;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        #contact address {
+            margin-top: 20px;
+            font-style: normal;
+        }
+
+        /* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: orange;
+    /* Button container styles */
+    text-align: center;
+
+
+}
+
+/* Styles for the outermost container */
+.css-1uf633j {
+    background-color: aliceblue;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for the section containing HRMS SOFTWARE */
+  .css-rq4t18 {
+    background-color: aliceblue;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Styles for the section containing HR Made Simple */
+  .css-9rs2kq {
+    margin-top: 40px;
+  }
+  
+  /* Styles for the section containing Explore Now button */
+  .css-12washx {
+    margin-top: 40px;
+  }
+  
+  /* Styles for the section containing the image */
+  .css-bigl6o {
+    margin-left: 20px;
+    position: static;
+    display: flex;
+  justify-content: center; /* Horizontally center the items */
+
+  }
+  
+  /* Styles for the image */
+  .gatsby-image-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    
+  }
+  
+  /* Styles for the paragraph */
+  .css-1wh9hyv p {
+    font-size: 18px;
+   
+    font-style: oblique;
+    line-height: 1.6;
+  }
+  
+  /* Styles for the link */
+  .css-1wh9hyv a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Styles for the Explore Now button */
+  .css-100e68w {
+    background-color: brown;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .css-100e68w:hover {
+    background-color: #0056b3;
+  }
+  
+  .css-12washx {
+    display: flex;
+    justify-content: space-between; /* Add space between the buttons */
+  }
+  
+/* Styles for the Explore Now button */
+.css-100e68w {
+    background-color: navajowhite;
+    color: purple;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline for the link */
+
+  }
+  
+  .css-100e68w:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for the button container */
+  
+  
+  /* Styles for the link within the button */
+  .css-1yz7e9k {
+    color: inherit; /* Inherit text color from the button */
+    text-decoration: none; /* Remove underline for the link */
+  }
+  
+
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the HR Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our HR portal. We strive to provide comprehensive HR solutions tailored to meet your organization's needs.</p>
+    </section>
+
+    <div class="css-1uf633j">
+        <div class="css-rq4t18">
+            <div class="css-9rs2kq">
+                <div class="css-1bhsmk8">
+                    <div class="css-q8nryn">
+                        <span class="css-mfgupt">HRMS SOFTWARE</span></div>
+                        <div class="css-11k8igx"><h1 class="css-1urzy6j">HR Made Simple</h1>
+                            <span class="css-1u9bd5r"><span class="css-1wh9hyv">
+                                <p>Bring simplicity, speed and efficiency to all repetitive <a href="/complete-guide-hrms/#what-are-the-common-functions-of-hrms-systems">HR functions</a>. Deliver world-class employee experience. Get operational HR out of the way, and make time for high-value work.</p>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="css-12washx">
+                        <button id="hero-section-btn" class="css-100e68w">
+                            <div class="css-1q1x3gf">
+                                <a href="{% url 'hr_register' %}" class="css-1yz7e9k"> HR Explore Now</a>
+                            </div>
+                        </button>
+
+
+
+                        <button id="hero-section-btn" class="css-100e68w">
+                            <div class="css-1q1x3gf">
+                                <a href="{% url 'employee_register' %}" class="css-1yz7e9k"> Employee Explore Now</a>
+                            </div>
+                        </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                                    <div class="css-bigl6o">
+                                        <div class="css-1guua0k">
+
+                                        </div>
+                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained gatsby-image-container">
+                                            <div style="max-width:726.7081967213114px;display:block; height:500px">
+                                                
+                                                <img aria-hidden="true" data-placeholder-image="" style="opacity:0;transition:opacity 500ms linear;object-fit:cover" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAAAXNSR0IArs4c6QAABXpJREFUSEvNlmtsU2UYx//vubWnW7u1Xbtu3dYBY7Ax0LGBgFEJETCREEgENJHEL06jYgAjftPyVRKIMWjwkzGgBmMUcFwCOGXhpo4Zxn04xi4dW9vTru3pOafn8ppORyYBphCN/+RJTvJ/zvN7L8+b9wX+72ppaeHD4bAD/4Uef/yJjbWzGjtD9U3dzXPnhsPhMId/S/VzF9bUBgPqdx++R/dsfYM2VpfSeQ116/APxeBvKjEUWfvi0mZbXSiAxxqmYfWTTYhEouvHfUopTyktmBDCQwErC9G48JGZGLoVRTSWQHVFELND3qaK+npP3rcsa0s2q1yQ5ewFAPnY+lDA6KhSxoHCX2gH0U1UewqQkdVSD/TpeZ9hGL+VHq4mudFqAPkIPDBwbzgsiM5iX8eFK4hFkxgYSuLEuYu4NBAldso0/JlmSZkRyOro+G/WAwPbrnbNdIpC5dkrN6HpMnhWx6nLN1BY6ATLYkY+x7IsBCvmwFtaO/Z9L/0tYE/fwJJEMiFmTAGyLKG75xp0RUaBaIPDXd6Elh1lDMMYpmUil9NhGMaDAVtadvFL3/ro1bR39iabGkXXlR54K6Zi7XMrUDenCQkpiWwms8TedfbcoaMnVgEEPM+B4ziYpmm7J5BeaCu8m3lSHXi5PzryscyKVUJBCUQtic860ugzPejU/KiqDEJNDGF+qiPQEt5Rc+l677eEkG0AtrEs+809gfGhyLKRI3vepJSy40Y4HGZUTXs+m0mhmGpw2Sj4yjn4eoTFyi8uo9/uA7zTwLEEqmEhNdiDxjmrfmFZdks+CCFfj9eKHd8bjB/+fNYY8OqXO+cNRyWHWOJ/gd7obKM3OvMtjR8i8FimWWem4tAuHoEgCMhVzEKR3Q4XQ8CyLDLuSiQ0BiY4+OwcvE80Nk+cDR29tcDoPb8XvO2MAvbdgdY967n+m4OFUjq52uBsVaGpVnlGVj8BsKxHhp8jpMiiQJzzgVoyBJcXumXC4xCRVFQIaho531RELEBMDYPnuIaFazaJp7/aoWx/+7VnejtOfgkQZriv74ypZg/bCLOfTBiQd+crKxa5fYG9NaHA5vkHMFgtqPvk6CCKaQ4q4SAUeQHRCcYyYOZ3Q0lDSUaRGY1BiQ5BDE6j2WHt2f6vNg63nzx94Oix7/2/HT77dBvw4zjk9p4BUA52XLu2aHp5yO9zv1MFvWFffyrAqTKyUhQpChCOB8fzULMyDCMHnVJIiRjUVBLUNGDydmKGpi5bWWl7BXKctP58eXlbJNo+cZknAsfk5vm+ioD7JdEuVu3vkcEqKajRARgMB87hBJNvfbsDRk5FLpuBrikwUxLlXR4i+iqg2ewFlaMD/PH29qOtZy++f2f9vwAXL17MtfZpr9N45Mn+Ucp2xdIgei5/vFBQVg17oQs8x8PKZcfyCSGgoOAs/ToRHIxFGFHIKWi/KeH8kLoZqVvd9wX29vbSkimzajsSqO1KGcWCobG5dEqxSoK0yOtnLUWGoWbyVxEIk59pAXjRCWITOX00dlCXU6WMkj5EBOGDKTV1Eam7s+9O4MSmua36NWFBunbiUUXPrV5eW3KxN65+8FOc85BSDwJOFxws+0fjUAqoGUQGe2mzm53XPRTvH/7t/Ajuo7sCJ2r/p7s2+cvKtndduoqjp37FsRsS/FRGIhZD84wqVPicqJteg7JA+fp1r27YPVm9Sd8kLnfxgspgEFNCVXhq0XxslCQMDvRDkpIIlpfB53GDYTmMxKX8od89Wb3JgKTA4ZjC/LkOrqJiOF1FCAXLYYHANA0YOQOmoWN4ZKRkklpjuu9tsWHDBoEALk3TYOjG2LWTzcpQVRWGrkNTNVjUgkUpbIJQl39C3q9e3vsdBMV6GsWE2q8AAAAASUVORK5CYII=" alt="">
+                                                <img width="726.7081967213114" height="500" data-main-image="" style="object-fit:contain;height:100%;opacity:1" sizes="(min-width: 726.7081967213114px) 726.7081967213114px, 100vw" decoding="async" loading="eager" src="{% static './bg.png' %};fit=max&amp;w=2788" 
+                            srcset="{% static './bg.png' %}"  alt="Hero Image" >
+<noscript>
+    <img width="726.7081967213114" height="530" data-main-image="" style="object-fit:contain;height:100%;opacity:1" sizes="(min-width: 726.7081967213114px) 726.7081967213114px, 100vw" decoding="async" loading="eager" src="{% static './bg.png' %};dpr=0.27&amp;fit=max&amp;w=2788" srcSet="https://www.datocms-assets.com/40521/1705950087-hrms-1.png?auto=format&amp;dpr=0.07&amp;fit=max&amp;w=2788 182w,
+https://www.datocms-assets.com/40521/1705950087-hrms-1.png?auto=format&amp;dpr=0.14&amp;fit=max&amp;w=2788 364w,
+https://www.datocms-assets.com/40521/1705950087-hrms-1.png?auto=format&amp;dpr=0.27&amp;fit=max&amp;w=2788 727w,
+https://www.datocms-assets.com/40521/1705950087-hrms-1.png?auto=format&amp;dpr=0.53&amp;fit=max&amp;w=2788 1454w" alt="Hero Image"/></noscript></div></div></div></div>
+  
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+        <address>
+            HR Portal<br>
+            Meet Patel<br>
+            Mehsana,384002<br>
+            Phone: +91 9586079987<br>
+            Email: meetpatel8517@gmail.com
+        </address>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2024 HR Portal. All rights reserved.</p>
+    </footer>
+
+   
+  
+</body>
+
+</html>

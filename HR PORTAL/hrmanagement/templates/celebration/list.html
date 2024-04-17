@@ -1,0 +1,71 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+      <div class="card mb-4">
+        <div class="card-header pb-0">
+          <h6>Celebration List</h6>
+          
+            
+            <a href = "{% url 'celebration_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add celebration</a>
+          
+        </div>
+        
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">title</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">description</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">date</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">time</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">venue</th>
+                  <th class="text-secondary opacity-7">ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for celebration in celebrations %}
+                <tr>
+                  <td>
+                    <div class="d-flex px-2 py-1">
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">{{celebration.title}}</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">{{celebration.description}}</p>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">{{celebration.date}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{celebration.time}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{celebration.venue}}</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="{% url 'update_celebration' celebration.id %}" class = "btn btn-warning">
+                      UPDATE
+                    </a>
+                    <a href="{% url 'detail_celebration' celebration.id %}" class = "btn btn-success">
+                      DETAIL
+                      </a>
+                      <a href="{% url 'delete_celebration' celebration.id %}" class = "btn btn-danger">
+                      DELETE
+                      </a>
+                  </td>
+                </tr>    
+                {% endfor %}       
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

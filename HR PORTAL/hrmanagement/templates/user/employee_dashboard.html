@@ -1,0 +1,196 @@
+{% extends "../base.html" %}
+ {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row px-md-3" style="margin-top: 15px;">
+      
+      <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Pending</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-danger">{{startedTask}}</p> {% endcomment %}
+
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          {% for i in leaves %}
+                          <tr>
+                            {% if i.status == 'Pending' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                          <td class="align-middle" >
+
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-danger" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;">
+                                            </form>  
+                                           
+                          
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                       <button class="card-button btn btn-info" style="align-self: center;background-color: #007bff;border: none;border-radius: 4px;color: #fff;padding: 8px 16px;cursor: pointer;margin:20px;padding:10px">+ Create Issue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Approved</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-info">{{processingTask}}</p> {% endcomment %}
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for i in leaves %}
+                          <tr>
+                            {% if i.status == 'Approved' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                          <td class="align-middle">
+                                          
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-primary" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;"> 
+                                              <!-- margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px; -->
+
+                                            </form> 
+                                        
+                          
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header pb-0">
+                    <h4>Rejected</h4>
+                    {% comment %} <p style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;" class="btn btn-success">{{complteTask}}</p> {% endcomment %}
+                    {% comment %} <a href = "{% url 'project_create' %}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">Add Project</a> {% endcomment %}
+                  </div>
+                  <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                      <table class="table align-items-center mb-0">
+                        <thead>
+                          <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"><h6>Leave</h6></th>
+                            <th class="text-secondary opacity-7"><h6></h6></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for i in leaves %}
+                          <tr>
+                            
+                            {% if i.status == 'Rejected' %}
+                                          <td>
+                                            <div class="d-flex px-2 py-1">
+                            
+                                              <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="mb-0 text-sm">{{i.leavetype}}</h6>
+                                                <p class="text-xs text-secondary mb-0">{{i.user|title}}</p>
+                                              </div>
+                                            </div>
+                                          </td>
+
+                                           <td class="align-middle">
+                                            <form action="{% url 'status_update' i.id %}" method="POST">
+                                              {% csrf_token %}
+                                              <input type="submit" value="C" class="btn btn-success" style="margin: 5px;padding: 5px;height: 40px;width: 40px;border-radius: 20px;">
+                                            </form>
+                           
+                                          </td> 
+                                {% endif %}
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+     
+  </body>
+</html>
+{% endblock content %}
